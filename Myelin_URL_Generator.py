@@ -19,7 +19,7 @@ def sample_call_url():
 
 
 
-FIREBASE_DB = "gpt4-dosage-engine"
+FIREBASE_DB = "12-4-challenge-calls"
 
 
 
