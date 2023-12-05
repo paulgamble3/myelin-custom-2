@@ -19,7 +19,7 @@ def sample_call_url():
 
 
 
-FIREBASE_DB = "12-4-challenge-calls"
+FIREBASE_DB = "12-5-RAG-calls"
 
 
 
@@ -40,7 +40,8 @@ with st.form("url-gen-form"):
 
     st.text_input("Enter your name:", key='username')
     st.subheader("[CALL URL]({})".format(call_url))
-    st.write("Call type: " + call_type.strip())
+    #st.write("Call type: " + call_type.strip())
+    st.write("After a few openings lines and introductions, please ask a hospital policy question from the provided list.")
     call_id = st.text_input("Please copy and paste the call ID:", key="call_id")
     
     submit_button = st.form_submit_button(label='Log call', on_click=log_call)
